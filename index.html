@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieZone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#home"
+            ><img src="./img/logo.png" alt="FoodieZone Restaurant Logo"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT US</a></li>
+          <li><a href="#why" class="nav-link">WHY CHOOSE</a></li>
+          <li><a href="#book" class="nav-link">BOOK A TABLE</a></li>
+        </ul>
+        <a href="#menu"><button class="btn-primary">VIEW MENU</button></a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-background">
+        <div class="bamboo-left"></div>
+        <div class="bamboo-right"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Savor Every<br />
+            Moment with<br />
+            <span class="hero-title-accent">Every Bite</span>
+          </h1>
+          <p class="hero-description">
+            Delight in flavors crafted to bring joy, comfort, and<br />
+            unforgettable dining experiences every time.
+          </p>
+
+          <a href="#reservation"
+            ><button class="btn-secondary">BOOK YOUR TABLE</button></a
+          >
+        </div>
+
+        <div class="hero-image">
+          <div class="food-circle">
+            <img
+              src="./img/food-dish.webp"
+              alt="Gourmet dish with steak and pasta"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <p class="about-label">About</p>
+          <h2 class="about-title">
+            Every Celebration<br />
+            Remarkable
+          </h2>
+          <p class="about-description">
+            At FoodieZone Restaurant, dining is more than just a meal—it's an
+            experience of flavor, tradition, and hospitality. Inspired by the
+            rich heritage of culinary artistry, FoodieZone brings together
+            authentic recipes, fresh ingredients, and modern presentation to
+            create dishes that delight every sense.
+          </p>
+          <a href="#reservation">
+            <button class="btn-secondary">BOOK YOUR TABLE</button></a
+          >
+
+          <!-- Statistics -->
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3 class="stat-number">110+</h3>
+              <p class="stat-label">
+                Seasonal Delights to Enjoy<br />Fresh flavors
+              </p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">120+</h3>
+              <p class="stat-label">
+                Healthy Choices with<br />Nutritious options
+              </p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">30+</h3>
+              <p class="stat-label">
+                Years of Exceptional Dining<br />Experiences
+              </p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">100+</h3>
+              <p class="stat-label">Outstanding Customers<br />Reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <img src="./img/chef.webp" alt="Our Head Chef" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PART 3: FOOD CATEGORIES SECTION -->
+    <!-- ============================================ -->
+    <section class="food-categories" id="categories">
+      <div class="categories-container">
+        <!-- Category 1: Pasta & Noodles -->
+        <div class="category-card">
+          <div class="category-image">
+            <img src="./img/pasta.webp" alt="Pasta & Noodles" />
+          </div>
+          <h3 class="category-title">Pasta & Noodles</h3>
+          <p class="category-description">
+            An indulgent collection of Italian pastas and Asian noodles with
+            rich sauces.
+          </p>
+        </div>
+
+        <!-- Category 2: Desserts & Sweet -->
+        <div class="category-card">
+          <div class="category-image">
+            <img src="./img/donut.webp" alt="Desserts & Sweet" />
+          </div>
+          <h3 class="category-title">Desserts & Sweet</h3>
+          <p class="category-description">
+            Indulge in irresistible cakes, pastries, & traditional sweets to end
+            on a high.
+          </p>
+        </div>
+
+        <!-- Category 3: Chef's Specials -->
+        <div class="category-card">
+          <div class="category-image">
+            <img src="./img/burger.webp" alt="Chef's Specials" />
+          </div>
+          <h3 class="category-title">Chef's Specials</h3>
+          <p class="category-description">
+            Exclusive dishes prepared with passion & creativity, available for a
+            limited time.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- END OF PART 3 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- PART 4: WHY CHOOSE US SECTION -->
+    <!-- ============================================ -->
+    <section class="why-choose" id="why">
+      <div class="why-choose-container">
+        <!-- Left Content Area -->
+        <div class="why-choose-content">
+          <p class="why-choose-label">Why Choose Us?</p>
+          <h2 class="why-choose-title">
+            More Than Dining<br />
+            It's FoodieZone
+          </h2>
+
+          <!-- Feature Cards -->
+          <div class="features-list">
+            <!-- Feature 1: Fresh Ingredients -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img src="./img/icon-fresh.svg" alt="Fresh Ingredients" />
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-title">Fresh & Authentic Ingredients</h3>
+              </div>
+            </div>
+
+            <!-- Feature 2: Healthy Options -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img src="./img/icon-healthy.svg" alt="Healthy Options" />
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-title">Healthy & Flavorful Options</h3>
+              </div>
+            </div>
+
+            <!-- Feature 3: Perfect Occasion -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <img src="./img/icon-occasion.svg" alt="Every Occasion" />
+              </div>
+              <div class="feature-text">
+                <h3 class="feature-title">Perfect for Every Occasion</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image Area -->
+        <div class="why-choose-image">
+          <div class="established-badge">
+            <p class="badge-text">Established Since</p>
+            <p class="badge-year">1970</p>
+          </div>
+          <img src="./img/food-platter.webp" alt="Delicious Food Platter" />
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- END OF PART 4 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- PART 5: BEST CATERING MENUS SECTION -->
+    <!-- ============================================ -->
+    <section class="catering-menu" id="menu">
+      <div class="catering-container">
+        <!-- Section Header -->
+        <div class="catering-header">
+          <p class="catering-label">Explore Menu Option</p>
+          <h2 class="catering-title">Best Catering Menus</h2>
+
+          <!-- Menu Category Tabs -->
+          <div class="menu-tabs">
+            <button class="menu-tab active">Breakfast</button>
+            <button class="menu-tab">Brunch</button>
+            <button class="menu-tab">Lunch</button>
+            <button class="menu-tab">Dinner</button>
+          </div>
+        </div>
+
+        <!-- Menu Content Grid -->
+        <div class="menu-content-grid">
+          <!-- Left Side: Featured Dish Image -->
+          <div class="menu-image">
+            <img src="./img/menu-dish.webp" alt="Featured Dish" />
+          </div>
+
+          <!-- Right Side: Menu Items List -->
+          <div class="menu-items-list">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3 class="menu-item-name">Garlic Butter Grilled Salmon</h3>
+                <p class="menu-item-description">
+                  Tender salmon fillet, flame-grilled and brushed with garlic
+                  butter, served with sautéed greens.
+                </p>
+              </div>
+              <div class="menu-item-price">Rs.950.00</div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3 class="menu-item-name">Tropical Coconut Chia Parfait</h3>
+                <p class="menu-item-description">
+                  Layers of chia pudding, fresh mangos, toasted coconut flakes,
+                  and a drizzle of honey.
+                </p>
+              </div>
+              <div class="menu-item-price">Rs.580.00</div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3 class="menu-item-name">Garlic Butter Grilled Salmon</h3>
+                <p class="menu-item-description">
+                  Tender salmon fillet, flame-grilled and brushed with garlic
+                  butter, served with sautéed greens.
+                </p>
+              </div>
+              <div class="menu-item-price">Rs.650.00</div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3 class="menu-item-name">Summer Garden Pesto Pasta</h3>
+                <p class="menu-item-description">
+                  Al dente pasta tossed with basil pesto, cherry tomatoes, and
+                  parmesan shavings.
+                </p>
+              </div>
+              <div class="menu-item-price">Rs.500.00</div>
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3 class="menu-item-name">Crispy Herb Chicken Supreme</h3>
+                <p class="menu-item-description">
+                  Golden roasted chicken with crispy skin, served over pancetta
+                  salad and red wine glaze.
+                </p>
+              </div>
+              <div class="menu-item-price">Rs.480.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="menu-stats">
+          <div class="stat-box">
+            <h3 class="stat-box-number">2K</h3>
+            <p class="stat-box-label">Our Daily Order</p>
+          </div>
+
+          <div class="stat-box">
+            <h3 class="stat-box-number">15+</h3>
+            <p class="stat-box-label">Specialist Chef</p>
+          </div>
+
+          <div class="stat-box">
+            <h3 class="stat-box-number">150+</h3>
+            <p class="stat-box-label">Our Menu Dish</p>
+          </div>
+
+          <div class="stat-box">
+            <h3 class="stat-box-number">2K</h3>
+            <p class="stat-box-label">Won Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- END OF PART 5 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- PART 6: EVENT BOOKING SECTION -->
+    <!-- ============================================ -->
+    <section class="event-booking" id="book">
+      <div class="event-booking-container">
+        <!-- Left Content Area -->
+        <div class="event-content">
+          <p class="event-label">Event Booking</p>
+          <h2 class="event-title">
+            Planning a Party or<br />
+            Special Event?
+          </h2>
+
+          <!-- Opening Hours Box -->
+          <div class="opening-hours-box">
+            <h3 class="hours-title">Opening Hour</h3>
+
+            <div class="hours-list">
+              <div class="hours-row">
+                <span class="hours-day">Monday - Saturday</span>
+                <span class="hours-time">7:30 am - 10:30 pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Sunday</span>
+                <span class="hours-time">7:30 am - 11:30 pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Happy Hour</span>
+                <span class="hours-time">5:30 am - 09:30 pm</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reservation Info -->
+          <p class="reservation-text">
+            Just Call for Reservation
+            <a href="tel:+918446169180" class="reservation-phone"
+              >+91 8446169180</a
+            >
+          </p>
+
+          <!-- Book Button -->
+          <a href="#reservation"
+            ><button class="btn-booking">BOOK YOUR TABLE</button></a
+          >
+        </div>
+
+        <!-- Right Image Area -->
+        <div class="event-image">
+          <!-- Decorative Chili Pepper -->
+          <img
+            src="./img/chili-pepper.webp"
+            alt="Chili Pepper"
+            class="chili-decoration"
+          />
+
+          <!-- Main Dish Image -->
+          <img
+            src="./img/lamb-shank.webp"
+            alt="Lamb Shank Dish"
+            class="main-dish"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- END OF PART 6 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- PART 7: TESTIMONIALS SECTION -->
+    <!-- ============================================ -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-container">
+        <!-- Section Header -->
+        <div class="testimonials-header">
+          <p class="testimonials-label">Testimonial</p>
+          <h2 class="testimonials-title">
+            What Our Guests<br />
+            Are Saying
+          </h2>
+        </div>
+
+        <!-- Testimonials Grid - 2 Columns -->
+        <div class="testimonials-grid">
+          <!-- Testimonial Card 1 -->
+          <div class="testimonial-card">
+            <!-- Testimonial Text -->
+            <p class="testimonial-text">
+              "FoodieZone Restaurant never disappoints. From the attentive
+              service to the fresh ingredients, every dish tells a story. The
+              grilled salmon is a must-try!" The food is hearty yet & always
+              make you feel."
+            </p>
+
+            <!-- Author Info -->
+            <div class="testimonial-author">
+              <img
+                src="./img/testimonial-1.png"
+                alt="Ronald Richards"
+                class="author-image"
+              />
+              <div class="author-details">
+                <h4 class="author-name">Omkar Bhandalkar</h4>
+                <p class="author-position">CEO, Sangli Chef.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="testimonial-card">
+            <!-- Testimonial Text -->
+            <p class="testimonial-text">
+              "Dining at FoodieZone is always a treat. The flavors are
+              authentic, the presentation is beautiful, and the atmosphere feels
+              like home. Truly one of the best culinary experiences in town."
+            </p>
+
+            <!-- Author Info -->
+            <div class="testimonial-author">
+              <img
+                src="./img/testimonial-2.jpg"
+                alt="Ralph Edwards"
+                class="author-image"
+              />
+              <div class="author-details">
+                <h4 class="author-name">Narendra Kharde</h4>
+                <p class="author-position">CEO, Nashik Chef.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- END OF PART 7 -->
+    <!-- ============================================ -->
+
+    <!-- ============================================ -->
+    <!-- PART 8: RESERVATION FORM SECTION -->
+    <!-- ============================================ -->
+    <section class="reservation-form" id="reservation">
+      <div class="reservation-container">
+        <!-- Section Header -->
+        <div class="reservation-header">
+          <p class="reservation-label">Book your Table</p>
+          <h2 class="reservation-title">Make A Reservation</h2>
+        </div>
+
+        <!-- Reservation Form -->
+        <form class="booking-form" id="bookingForm">
+          <!-- Row 1: Name and Phone Number (2 Columns) -->
+          <div class="form-row">
+            <!-- Booking Name Input -->
+            <div class="form-group">
+              <label for="bookingName" class="form-label">Booking Name</label>
+              <input
+                type="text"
+                id="bookingName"
+                name="bookingName"
+                class="form-input"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+
+            <!-- Phone Number Input -->
+            <div class="form-group">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                class="form-input"
+                placeholder="Enter Your Phone Number"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Row 2: Date and Time (2 Columns) -->
+          <div class="form-row">
+            <!-- Date Input -->
+            <div class="form-group">
+              <label for="bookingDate" class="form-label">Date</label>
+              <input
+                type="date"
+                id="bookingDate"
+                name="bookingDate"
+                class="form-input form-date"
+                required
+              />
+            </div>
+
+            <!-- Time Input -->
+            <div class="form-group">
+              <label for="bookingTime" class="form-label">Time</label>
+              <input
+                type="time"
+                id="bookingTime"
+                name="bookingTime"
+                class="form-input form-time"
+              />
+            </div>
+          </div>
+
+          <!-- Row 3: Person of Number (Full Width) -->
+          <div class="form-row">
+            <!-- Number of Persons Input -->
+            <div class="form-group form-group-full">
+              <label for="personNumber" class="form-label"
+                >Person of Number</label
+              >
+              <input
+                type="number"
+                id="personNumber"
+                class="form-input"
+                placeholder="Person Of Number"
+              />
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-book-table">BOOK YOUR TABLE</button>
+        </form>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!-- END OF PART 8 -->
+    <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!-- PART 9: FOOTER SECTION -->
+    <!-- ============================================ -->
+    <footer class="footer" id="footer">
+      <!-- Food Gallery Banner -->
+      <div class="footer-gallery">
+        <div class="gallery-image">
+          <img src="./img/footer-5.jpg" alt="Delicious tacos with lime" />
+        </div>
+        <div class="gallery-image">
+          <img src="./img/footer-4.jpg" alt="Avocado toast with eggs" />
+        </div>
+        <div class="gallery-image">
+          <img src="./img/footer-3.jpg" alt="Fresh red apples" />
+        </div>
+        <div class="gallery-image">
+          <img src="./img/footer-2.jpg" alt="Colorful citrus fruits" />
+        </div>
+        <div class="gallery-image">
+          <img
+            src="./img/footer-1.jpg"
+            alt="Mediterranean bowl with chickpeas"
+          />
+        </div>
+      </div>
+
+      <!-- Footer Content -->
+      <div class="footer-content">
+        <!-- Footer Info Container -->
+        <div class="footer-info">
+          <!-- Left: Booking Info -->
+          <div class="footer-booking">
+            <p class="footer-text">Plan Ahead — Book a Table</p>
+            <p class="footer-subtext">at FoodieZone Restaurant</p>
+          </div>
+
+          <!-- Center: Location Info -->
+          <div class="footer-location">
+            <div class="location-icon">
+              <!-- Location Pin SVG Icon -->
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="location-details">
+              <p class="location-label">Location</p>
+              <p class="location-address">Warje, Pune, Maharashtra 411058</p>
+            </div>
+          </div>
+
+          <!-- Right: Phone Info -->
+          <div class="footer-phone">
+            <div class="phone-icon">
+              <!-- Phone SVG Icon -->
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="phone-details">
+              <p class="phone-label">Phone No</p>
+              <a href="tel:+8446169180" class="phone-number">+91 8446169180</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom: Logo and Copyright -->
+        <div class="footer-bottom">
+          <!-- Large FoodieZone Logo -->
+          <div class="footer-logo">
+            <img
+              src="./img/logo-footer.png"
+              alt="FoodieZone Restaurant Logo"
+              class="logo-image"
+            />
+          </div>
+
+          <!-- Copyright and Credits -->
+          <div class="footer-credits">
+            <p class="copyright">
+              2026 Design FoodieZone . All right reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ============================================ -->
+    <!-- END OF PART 9 -->
+    <!-- ============================================ -->
+  </body>
+</html>
