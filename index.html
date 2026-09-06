@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FoodieZone</title>
+    <title>FoodieZone | Gourmet Dining & Fine Culinary Experience</title>
+    <meta name="description" content="Savor luxury fine dining, authentic recipes, interactive catering menus, and online table reservations at FoodieZone Restaurant." />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +14,30 @@
     />
   </head>
   <body>
+    <!-- Executive Gold Custom Cursor & Magnetic Ring Trail -->
+    <div class="custom-cursor-dot" id="cursorDot"></div>
+    <div class="custom-cursor-ring" id="cursorRing"></div>
+
+    <!-- Global Luxury Gold Star Canvas -->
+    <canvas id="globalStarCanvas"></canvas>
+
+    <!-- Full-Screen Gourmet Food Background Preloader -->
+    <div id="preloader" class="gourmet-bg-preloader">
+      <div class="gourmet-bg-image"></div>
+      <div class="gourmet-bg-overlay"></div>
+      
+      <div class="gourmet-loader-content">
+        <div class="gourmet-logo-box">
+          <img src="./img/logo.png" alt="FoodieZone Restaurant Logo" class="gourmet-logo-img" />
+        </div>
+        <p class="gourmet-tagline">LUXURY DINING & FINE CULINARY ARTISTRY</p>
+        
+        <div class="gourmet-progress-wrapper">
+          <div class="gourmet-progress-bar" id="gourmetProgressBar"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
@@ -28,41 +53,47 @@
           <li><a href="#book" class="nav-link">BOOK A TABLE</a></li>
         </ul>
         <a href="#menu"><button class="btn-primary">VIEW MENU</button></a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="hero-background">
+        <video class="hero-bg-video" autoplay loop playsinline poster="./img/food-dish.webp">
+          <source src="./img/hero-video.webm" type="video/webm" />
+          <source src="./Cinematic_K_ultra_fine_dining_gwr_video_mvp.webm" type="video/webm" />
+        </video>
+        <div class="hero-video-overlay"></div>
         <div class="bamboo-left"></div>
         <div class="bamboo-right"></div>
       </div>
 
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            Savor Every<br />
-            Moment with<br />
-            <span class="hero-title-accent">Every Bite</span>
+      <div class="hero-container hero-minimal-container">
+        <div class="hero-content hero-minimal-content">
+          <h1 class="hero-title-minimal">
+            Culinary Excellence.<br />
+            <span class="hero-accent-gold">Unforgettable Moments.</span>
           </h1>
-          <p class="hero-description">
-            Delight in flavors crafted to bring joy, comfort, and<br />
-            unforgettable dining experiences every time.
+          <p class="hero-subtext-minimal">
+            An extraordinary Michelin-standard gourmet journey in the heart of the city.
           </p>
-
-          <a href="#reservation"
-            ><button class="btn-secondary">BOOK YOUR TABLE</button></a
-          >
         </div>
 
-        <div class="hero-image">
-          <div class="food-circle">
-            <img
-              src="./img/food-dish.webp"
-              alt="Gourmet dish with steak and pasta"
-            />
+        <!-- Animated Mouse Scroll Navigation Indicator -->
+        <a href="#about" class="mouse-scroll-indicator" aria-label="Scroll down to About section">
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
           </div>
-        </div>
+          <div class="scroll-arrows">
+            <span></span>
+            <span></span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -114,7 +145,7 @@
         </div>
 
         <div class="about-image">
-          <img src="./img/chef.webp" alt="Our Head Chef" />
+          <img src="./img/chef.webp" alt="Our Executive Head Chef" />
         </div>
       </div>
     </section>
@@ -249,7 +280,7 @@
         <div class="menu-content-grid">
           <!-- Left Side: Featured Dish Image -->
           <div class="menu-image">
-            <img src="./img/menu-dish.webp" alt="Featured Dish" />
+            <img src="./img/breakfast-dish.png" alt="Featured Dish" id="featuredMenuImg" />
           </div>
 
           <!-- Right Side: Menu Items List -->
@@ -554,15 +585,29 @@
           <div class="form-row">
             <!-- Number of Persons Input -->
             <div class="form-group form-group-full">
-              <label for="personNumber" class="form-label"
-                >Person of Number</label
-              >
+              <label for="personNumber" class="form-label">Number of Guests</label>
               <input
                 type="number"
                 id="personNumber"
+                name="personNumber"
                 class="form-input"
-                placeholder="Person Of Number"
+                placeholder="Number of Guests (e.g. 2, 4, 8)"
+                min="1"
+                max="20"
               />
+            </div>
+          </div>
+
+          <!-- Row 4: Seating Preference Selector -->
+          <div class="form-row">
+            <div class="form-group form-group-full">
+              <label class="form-label">Seating Atmosphere Preference</label>
+              <div class="seating-chips" id="seatingChips">
+                <button type="button" class="chip active" data-seating="Main Dining Room">🍷 Main Dining Room</button>
+                <button type="button" class="chip" data-seating="VIP Chef Table">⭐ VIP Chef Table</button>
+                <button type="button" class="chip" data-seating="Rooftop Terrace">🌃 Rooftop Terrace</button>
+                <button type="button" class="chip" data-seating="Private Suite">🗝️ Private Suite</button>
+              </div>
             </div>
           </div>
 
@@ -574,6 +619,21 @@
     <!-- ============================================ -->
     <!-- END OF PART 8 -->
     <!-- ============================================ -->
+
+    <!-- VIP Concierge Club Section -->
+    <section class="vip-club-section">
+      <div class="vip-club-container">
+        <div class="vip-club-card">
+          <p class="vip-club-label">Exclusive Privilege</p>
+          <h2 class="vip-club-title">Join The FoodieZone VIP Culinary Club</h2>
+          <p class="vip-club-desc">Subscribe to receive private chef tasting menu invitations, sommelier wine pairing releases, and priority table reservations.</p>
+          <form class="vip-club-form" id="vipClubForm">
+            <input type="email" class="vip-club-input" placeholder="Enter Your Email Address" required />
+            <button type="submit" class="btn-primary vip-club-btn">JOIN VIP CLUB</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- ============================================ -->
     <!-- PART 9: FOOTER SECTION -->
     <!-- ============================================ -->
@@ -680,5 +740,6 @@
     <!-- ============================================ -->
     <!-- END OF PART 9 -->
     <!-- ============================================ -->
+    <script src="./script.js"></script>
   </body>
 </html>
