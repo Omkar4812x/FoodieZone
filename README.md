@@ -65,17 +65,6 @@
 
 ---
 
-## 🌐 Deploying to Vercel
-
-This repository is pre-configured for instant static deployment on Vercel:
-
-```bash
-npx vercel
-```
-
-Or connect `https://github.com/Omkar4812x/FoodieZone` directly inside your **Vercel Dashboard**.
-
----
 
 ## 📄 License
 
