@@ -55,10 +55,10 @@
 ## 🚀 Quick Setup & Local Development
 
 1. **Clone the Repository**:
-   ```bash
+   
    git clone https://github.com/Omkar4812x/FoodieZone.git
    cd FoodieZone
-   ```
+   
 
 2. **Run Locally**:
    Open `index.html` directly in any modern browser, or run via VS Code **Live Server**.
