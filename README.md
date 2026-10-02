@@ -1,6 +1,6 @@
 # 👑 FoodieZone — World-Class Michelin-Standard Luxury Dining Platform
 
-> **An ultra-luxurious, 7-star gourmet restaurant web application featuring full-screen 4K AI video backdrops, automatic scroll-based sound management, an executive gold custom cursor, interactive catering menus with Sommelier wine pairings, and a VIP Concierge reservation portal.**
+> **An ultra-luxurious, 7-star gourmet restaurant web application featuring full-screen 4K AI video backdrops, automatic scroll-based sound management, an executive gold custom cursor, interactive catering menus with Sommelier wine pairings, and a VIP Concierge reservation portal. Created By Omkar Bhandalkar**
 
 ---
 
