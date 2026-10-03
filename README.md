@@ -45,9 +45,9 @@
 
 ## 🛠️ Tech Stack
 
-- **Core**: HTML5, Vanilla JavaScript (ES6+), Vanilla CSS3 (Custom CSS Variables, Flexbox, CSS Grid, Glassmorphism).
-- **Media**: 4K WebM/MP4 Video, High-Res WebP Culinary Assets, HTML5 Canvas 2D API.
-- **Typography**: Google Fonts (*Playfair Display* & *Lato*).
+- **Core**: HTML5, Vanilla JavaScript (ES6+), Vanilla CSS3 (Custom CSS Variables, Flexbox, CSS Grid, Glassmorphism)
+- **Media**: 4K WebM/MP4 Video, High-Res WebP Culinary Assets, HTML5 Canvas 2D API
+- **Typography**: Google Fonts (*Playfair Display* & *Lato*)
 - **Deployment**: Vercel ready (Zero-Config Static Hosting)
 
 ---
