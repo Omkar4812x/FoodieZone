@@ -43,7 +43,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack :
 
 - **Core**: HTML5, Vanilla JavaScript (ES6+), Vanilla CSS3 (Custom CSS Variables, Flexbox, CSS Grid, Glassmorphism)
 - **Media**: 4K WebM/MP4 Video, High-Res WebP Culinary Assets, HTML5 Canvas 2D API
@@ -52,15 +52,15 @@
 
 ---
 
-## 🚀 Quick Setup & Local Development
+## 🚀 Quick Setup & Local Development :
 
-1. **Clone the Repository**:
+1. **Clone the Repository** :
    
    git clone https://github.com/Omkar4812x/FoodieZone.git
    cd FoodieZone
    
 
-2. **Run Locally**:
+2. **Run Locally** :
    Open `index.html` directly in any modern browser, or run via VS Code **Live Server**.
 
 ---
